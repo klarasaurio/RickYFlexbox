@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximun-scale=1">
+    <style>
+        @font-face {
+            font-family: kanit;
+            src: url(fuente/Kanit-Regular.ttf);
+        }
+
+        .anunciat {
+            font-family: kanit;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .portada {
+            display: flex;
+            height: 100vh;
+            background-image: url(./Img/veneno.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .portal img {
+            width: 45%;
+        }
+
+        .link {
+            border: solid 3px black;
+            color: aliceblue;
+            font-size: 3rem;
+            font-family: kanit;
+            text-decoration: none;
+            background-color: chartreuse;
+            background-size: 20px;
+            display: flex;
+        }
+
+        .link {
+            Border: solid 3px black;
+            Color: aliceblue;
+            Font-size: 3rem;
+            font-family: kanit;
+            text-transform: none;
+            background-color: chartreuse;
+            background-size: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+
+        }
+
+        .link:hover {
+            background-color: chocolate;
+        }
+        .noHover:hover{
+            background-color: chartreuse;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .gap {
+            gap: 1em;
+        }
+
+        .alignCenter {
+            align-items: center;
+        }
+
+        .alignCenter a {
+            text-align: center;
+        }
+
+        .justifyContent {
+            justify-content: center;
+        }
+        .gameOver{
+            width: 30%;
+            margin: 0 auto;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+        }
+    </style>
+    <title>Aventura</title>
+</head>
+
+<body>
+    <div class="portada flex column gap">
+        <div class="portal flex gap justifyContent link gameOver">
+            <a href="./index.html">Game Over</a>
+        </div>
+    </div>
+    <footer class="link noHover">
+        <p id="frases">La camarera os ha envenenado, vuelve a intentarlo</p>
+    </footer>
+</body>
+</html>
